@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="icon" type="image/x-icon" href="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/favicon.ico" />
+
+    <title>CHITKARA EXPLORER</title> 
+   <style>
+/* Style The Dropdown Button */
+.dropbtn {
+   
+    
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    
+    background-color: #bbbfbf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <style>
+         #map {
+         height: 500px;
+         width: 100%;
+         }
+        p{
+          font-size: 70%;
+        }
+        .qt{
+          display: inline;
+        }
+      </style>      
+  </head>
+  
+  <body class="size-1140">
+  	
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="https://www.consumercomplaints.in/thumb.php?bname=1&src=chitkara-university.png&wmax=900&hmax=900&quality=90&nocrop=1" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb48fWjF62H1WRMTuktGStmu4Cxfl9tyruwOaCHDkT0dtDcnTy" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron " >
+            <li><a href="index.html" class="text-size-30">HOME</a></li>
+             <li><a href="about.html" class="text-size-30">ABOUT</a></li>
+            <li><div class="dropdown"><a href="explore.html" class="text-size-30">EXPLORE</a><div class="dropdown-content">
+    <a href="buildings.html">BUILDINGS</a>
+    <a href="eateries.html">EATERIES</a>
+    <a href="medical.html">PHARMACIES</a>
+     <a href="halls.html">HALLS</a>
+    <a href="banks.html">BANKS</a>
+    <a href="hostels.html">HOSTELS</a>
+    <a href="utilities.html">UTILITIES</a>
+    <a href="books.html">BOOKS</a>
+    <a href="theaters.html">THEATERS</a>
+    <a href="rental.html">RENTALS</a>
+  </div>
+</div></li>
+              <li><a href="chat.html" class="text-size-30">CHAT</a></li>
+              <li><a href="contact.html" class="text-size-30">CONTACT</a></li>
+              
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+       
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/click2.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/click3.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/explore_hub.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">CHITKARA UNIVERSITY</h1><br> <h2 class="text-white margin-bottom-30 text-size-40 text-m-size-30 text-line-height-1">Don't aquire knowledge. Create it!!</h2>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">The University has at the centre of its philosophical core the commitment to excellence in education. It is the strong academic heritage of the University, and such firmness on matters of principles that has seen it grow from strength to strength in such a short span of time.
+
+</p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <a class="button button-white-stroke s-12" href="#q1">Get Started Now</a>
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+                       
+      </header>
+       <section class="section">
+        <div class="line">
+          <h2 id="q1" class="text-size-50 text-center">About Us</h2>
+          <hr class="break-small background-primary break-center">
+        </div>
+        <div class="line">
+          <div class="margin">  
+            <div class="s-12 m-12 l-2">
+              <p class="h1 text-size-30 margin-m-bottom-30 text-primary text-line-height-1 text-right">We Are Tested<br>We Are Talented<br>We Are Trusted</p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-20 margin-m-bottom-30 text-dark">Chitkara University, the best university in Punjab is a government-recognized university with the right to confer degrees as per the Sections 2(f) and 22(1) of the UGC Act, 1956.</p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-20 text-dark">It is because of the cumulative effect of an elaborate in-campus academic infrastructure; strong national and international collaborations; </p>
+            </div>
+          </div>
+        </div>    
+      </section>
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center"> 
+        <div class="row">
+          <div class="col-md-4">
+          <h2 class="today-headlines text-size-30">Upcoming <strong>Events</strong></h2> 
+                        <div class="gradientGrey">
+                          <div class="padd20">
+                
+                            <ul class="upcomingevents padd20">
+                              
+              
+              
+              
+                          
+                                <li>
+                <div class="uceventsleft">
+                  <a href="https://www.chitkara.edu.in/events/chitkara-business-school-ranked-66th-amongst-top-100-business-schools-india-best-business-school-region/" title="Chitkara Business School ranked 66th amongst top 100 Business Schools in India and best business school in Region">
+                  <img width="270" height="155" src="https://www.chitkara.edu.in/wp-content/uploads/2018/02/Spotlight.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.chitkara.edu.in/wp-content/uploads/2018/02/Spotlight.jpg 270w, https://www.chitkara.edu.in/wp-content/uploads/2018/02/Spotlight-228x130.jpg 228w" sizes="(max-width: 270px) 100vw, 270px" /> 
+                  </a>
+                </div>
+               
+                                </li>
+                
+                          
+                                <li>
+                <div class="uceventsleft">
+                  <a href="https://www.chitkara.edu.in/events/wecon-2018/" title="WECON 2018">
+                  <img width="270" height="155" src="https://www.chitkara.edu.in/wp-content/uploads/2018/01/wecon.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.chitkara.edu.in/wp-content/uploads/2018/01/wecon.jpg 270w, https://www.chitkara.edu.in/wp-content/uploads/2018/01/wecon-228x130.jpg 228w" sizes="(max-width: 270px) 100vw, 270px" /> 
+                  </a>
+                </div>
+                
+               
+                                </li>
+                
+                          
+                                <li>
+                <div class="uceventsleft">
+                  <a href="https://www.chitkara.edu.in/events/steam-school-curin/" title="New &#8220;STEAM SCHOOL&#8221; launched by CURIN">
+                  <img width="270" height="155" src="https://www.chitkara.edu.in/wp-content/uploads/2018/01/Spotlight.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.chitkara.edu.in/wp-content/uploads/2018/01/Spotlight.jpg 270w, https://www.chitkara.edu.in/wp-content/uploads/2018/01/Spotlight-228x130.jpg 228w" sizes="(max-width: 270px) 100vw, 270px" /> 
+                  </a>
+                </div>
+                <div class="uceventsright">
+                                    
+                  
+                </div>
+                                </li>
+                
+                              </ul>
+                    </div>
+                        </div><!--gradientGrey-->
+                  </div><!--five columns-->
+                
+                <div class="col-md-4 text-size-30">   
+                <h2 class="today-headlines text-size-30">News by <strong>School</strong></h2> 
+                  <div class="gradientGrey">
+                                        
+                            <div class="tagList padd20">
+                            <ul>
+                            <li><a class="text-size-20" href="https://www.chitkara.edu.in/news/can-news/" title="View all posts in Chitkara Alumni Network" >Chitkara Alumni Network</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/cbs-news/" title="View all posts in Chitkara Business School" >Chitkara Business School</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/education-news/" title="View all posts in Chitkara College of Education" >Chitkara College of Education</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/hmct-news/" title="View all posts in Chitkara College of Hotel Management &amp; Catering" >Chitkara College of Hotel Management &amp; Catering</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/chitkara-college-of-nursing/" title="View all posts in Chitkara College of Nursing" >Chitkara College of Nursing</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/pharmacy-news/" title="View all posts in Chitkara College of Pharmacy" >Chitkara College of Pharmacy</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/cfec-news/" title="View all posts in Chitkara Financial Education Centre" >Chitkara Financial Education Centre</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/engineering-news/" title="View all posts in Chitkara Institute of Engg. &amp; Technology" >Chitkara Institute of Engg. &amp; Technology</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/healthsciences-news/" title="View all posts in Chitkara School of Health Sciences" >Chitkara School of Health Sciences</a></li><li><a href="https://www.chitkara.edu.in/news/hospitality-news/" class="text-size-20" title="View all posts in Chitkara School of Hospitality" >Chitkara School of Hospitality</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/csmc-news/" title="View all posts in Chitkara School of Mass Communication" >Chitkara School of Mass Communication</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/gbc-news/" title="View all posts in Groge Brown College, Canada" >Groge Brown College, Canada</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/international-collaborations/" title="View all posts in International Collaborations" >International Collaborations</a></li><li><a href="https://www.chitkara.edu.in/news/architecture-news/" class="text-size-20" title="View all posts in School of Planning &amp; Architecture" >School of Planning &amp; Architecture</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/news/social-initiatives/" title="View all posts in Social Initiatives" >Social Initiatives</a></li>                       </ul>
+                        </div>
+                  </div>
+                </div>
+                
+                <div class=" col-md-4">
+                <h2 class="today-headlines text-size-30">News by <strong>Topics</strong></h2>  
+                  <div class="gradientGrey">
+            <div class="tagList padd20"><ul><li><a href="https://www.chitkara.edu.in/tag/international-youth-forum/" class="text-size-20" title="View all posts in International Youth Forum" >International Youth Forum</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/health-fitness/" title="View all posts in Health &amp; Fitness" >Health &amp; Fitness</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/digital-marketing/" title="View all posts in Digital Marketing" >Digital Marketing</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/hospitality/" title="View all posts in Hospitality" >Hospitality</a></li><li><a href="https://www.chitkara.edu.in/tag/media-education/" class="text-size-20" title="View all posts in Media Education" >Media Education</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/distinguished-speakers-program/" title="View all posts in Distinguished Speakers Program" >Distinguished Speakers Program</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/research-laboratory/" title="View all posts in Research Laboratory" >Research Laboratory</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/deans-honour-list/" title="View all posts in Deans Honour List" >Deans Honour List</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/internship/" title="View all posts in Internship" >Internship</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/saeindia/" title="View all posts in SAEINDIA" >SAEINDIA</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/dr-k-k-sharma/" title="View all posts in Dr. K.K. Sharma" >Dr. K.K. Sharma</a></li><li><a class="text-size-20" href="https://www.chitkara.edu.in/tag/republic-day-camp/" title="View all posts in Republic Day Camp" >Republic Day Camp</a></li></ul>
+                                <a class="greenbtn mtop20 left" href="/cu-times/topics/" style="margin-bottom:15px;">view all topics...</a>
+                                </div> 
+                  </div>
+                    </div>
+        </div><!--row-->
+                
+
+        </div>
+      </section>
+      
+ 
+      
+      <hr class="break margin-top-bottom-0">
+      
+      <!-- Section 4 -->
+      <section class="section-top-padding full-width">
+        <h2 class="text-size-50 text-center">Chitkara Vista</h2>
+        <hr class="break-small background-primary break-center"> 
+        <div class="tabs background-primary-hightlight">
+            
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-02.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Unleash your creativity with our Architecture / Art & Design Programs at one of the premier design schools of the country.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click1.jpg" alt="" title="Portfolio Image 1" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/video.mp4">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">We create leaders in Healthcare & Pharmacy fields by providing programs that are responsive to the
+market needs, keeping in mind the rapid advance in the health care sector in India and abroad.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click2.jpg" alt="" title="Portfolio Image 2" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-08.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Our programs in Media, Hospitality and Sales are built on strong theoretical foundations coupled with great opportunities for
+hands-on experience and internships in the best of companies. </h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click5.jpg" alt="" title="Portfolio Image 3" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-05.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Engineering Programs at Chitkara University have been consistently ranked within top 50 of the country which speaks volumes about our strong academic heritage, innovative teaching methodology and proactive industry collaborations.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click4.jpg" alt="" title="Portfolio Image 4" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/video.mp4">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Personal attention. Small classes. Student-centered education. Outstanding teachers. And strong collaborations with blue-chip companies. That is Chitkara Business School in nutshell.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click3.jpg" alt="" title="Portfolio Image 5" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-11.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin"> It is further an established fact that small & medium industry prefer to employ Diploma Holders because of their special skills in interpreting Engineering drawings, estimating, costing, billing, supervision, measurement, testing, repair & maintenance etc.</h2> 
+                       
+                      </div> 
+                    </div> 
+                    <img src="img/click6.png" alt="" title="Portfolio Image 6" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-12.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin"> Chitkara College of Applied Engineering has been established in Chitkara University to crystallise the ‘Make in India’ mission of Hon’ble Prime Minister Narendra Modi and to provide opportunities of skill development along with vertical mobility leading to gainful employment of diploma students joining Engineering Programs.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click8.png" alt="" title="Portfolio Image 7" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-07.jpg">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">In today’s competitive world, two of the most dynamic and fast moving areas in any organization are SALES and MARKETING. Chitkara College of Sales & Retail Marketing is a Chitkara Education initiative to provide students, opportunity to grow vertically & horizontally in their career paths with sales & marketing specialization.</h2> 
+                        
+                      </div> 
+                    </div> 
+                    <img src="img/click7.jpg" alt="" title="Portfolio Image 8" />
+                  </a>	
+                </div>
+              </div>  
+          
+            
+              </div>  
+            
+      </section>
+      
+      <!-- Section 5 -->    
+      <section class="section background-white text-center">
+        <div class="line">
+          <h2 class="text-size-50 text-center">CAMPUS LEADERSHIP</h2>
+          <hr class="break-small background-primary break-center">
+          <div class="carousel-default owl-carousel carousel-wide-arrows">
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="https://www.chitkara.edu.in/wp-content/uploads/2013/07/ashok_sir.jpg" alt="">
+                <p class="h1 margin-bottom text-size-20">With exemplary elegance and polished ideas, with towering calibre and right balance of thoughts and beliefs, 
+Dr Ashok K Chitkara is the face of potential youth and equitable education.</p>
+                <p class="h1 text-size-16">CHANCELLOR, CHITKARA UNIVERSITY – PUNJAB</p>
+              </div>
+            </div>
+            <div class="item"> 
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="https://www.chitkara.edu.in/wp-content/uploads/2013/07/madhumam_pic-1.jpg" alt="">
+                <p class="h1 margin-bottom text-size-20">Dr Madhu Chitkara is one of the co-founders of Chitkara Educational Trust, an organization of great repute & distinction. An eminent academician, an innovative entrepreneur, she has articulated, designed the road map for the Trust & has actively contributed to its tremendous growth and recognition in all these years and is spreading light of education in the life of tens of thousands of people.</p>
+                <p class="h1 text-size-16">VICE-CHANCELLOR, CHITKARA UNIVERSITY, PUNJAB
+</h5>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <!-- Contact Us -->
+      <div class="background-primary padding text-center">
+        <p class="h1">Contact Us: 01762507084, 86</p>  <a target="blank" href="https://www.facebook.com/ChitkaraU" class="facebook"><img class="qt" src="img/facebook-logo.png" ></a>
+                <a target="_blank" href="https://youtube.com/chitkaraU" class="youtube"><img src="img/youtube-logo.png" class="qt"></a>
+                <a target="_blank" href="https://twitter.com/chitkarau" class="twitter"><img src="img/twitter-logo-silhouette.png" class="qt"></a>
+                <a target="blank" href="https://www.linkedin.com/edu/school?id=43021" class="linked-in"><img src="img/linkedin-logo.png" class="qt"></a>
+                <a target="blank" href="https://plus.google.com/+chitkarauniversity/" class="google-plus"><img src="img/googleplus-logo.png" class="qt"></a>
+        <a target="blank" href="https://en.wikipedia.org/wiki/Chitkara_University,_Punjab" class="Wikipedia"><img src="img/wordpress-logo-of-a-letter-in-a-circle.png" class="qt"></a>
+        <a target="blank" href="https://www.instagram.com/chitkarau/" class="instagram"><img src="img/instagram-symbol.png" class="qt"></a>
+                                                                 
+      </div>
+      
+      <!-- Main Footer -->
+      <section class="background-dark full-width">
+        <!-- Map -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div id="map">  	  
+            
+          </div>
+        </div>
+        
+        <!-- Collumn 2 -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="padding-2x">
+            <div class="line">              
+              <div class="float-left margin-left-50">
+                 <img title="Chitkara University Logo" alt="Chitkara University" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/CU_logo.png" class="aligncenter mtop80" height="193px" width="231px">
+                </div>
+                
+                </div>
+                
+                <div class="margin-left-70 margin-top-30 margin-bottom-30">
+                  <h2 class="margin-bottom-0"> CHITKARA UNIVERSITY (PUNJAB)<br>
+Chandigarh-Patiala National Highway <br>
+Punjab 140 401<br>
+CHANDIGARH INFORMATION CENTRE<br>
+SCO 160-161, Sector 9-C<br>
+Chandigarh 160 009</h2>
+                </div>
+                
+            </div>
+          </div>
+        </div>  
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+       
+          <p class="text-size-12">CONTACT US Punjab Campus
+Chandigarh-Patiala National Highway (NH-64)
+Punjab- 140 401, India
+Mr. Amandeep Singh: +91 8288088578</p>
+        
+      </section>
+    </footer>
+    <script>
+         function initMap() {
+           var center = {lat: 30.5176089, lng:76.6573756};
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 13,
+             center: center
+           });
+           var marker = new google.maps.Marker({
+             position: center,
+             map: map
+           });
+         }
+      </script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZWq2v3bL_vrmABGzTDayJg_9rjIroIPE&callback=initMap"></script>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+    <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css">
+    <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
+    <script> Init('?botID=17897&amp;appID=Vef5TpGyjfOO3esjhENx', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/1526306302KszOmbdlXl', 'bubble', '#00AFF0', 90, 90, 62.99999999999999, '', '0', '#FFFFFF', 0);</script>
+  </body>
+</html>
